@@ -1,0 +1,139 @@
+/* === Reset === */
+// Fonts
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/Gilroy-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
+        url('../fonts/Gilroy-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../fonts/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('../fonts/ITCAvantGardeStd-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    font-size: 62.5%;
+    // --primary-font-size: 1.8rem;
+    // --primary-font: 'Red Hat Display';
+    // --black-1: #333;
+}
+html,
+body {
+    height: 100%;
+    background-color: $white;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: $primary-font;
+}
+body {
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+    font-weight: $primary-font-weight;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary-color;
+    transition-duration: $transition-duration;
+    &:hover {
+        color: $primary-color;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    // font-weight: 600;
+    // line-height: 1.2;
+    // font-family: var(--title-font);
+    // font-weight: 600;
+}
+p {
+    margin-bottom: 0;
+}
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+    object-fit: cover;
+}
+video {
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+label {
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    outline: none;
+    border: 0;
+}
+
+span {
+    display: inline-block;
+}
+sup {
+    top: -0.185em;
+}
+.btn-close:focus {
+    box-shadow: none;
+}
+video {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
